@@ -14,10 +14,10 @@ function palindrome(str) {
 }
 
 let elForm = document.getElementById("formId")
-elForm.addEventListener("click".replace, function(){
+elForm.addEventListener("click", function(){
     let elWords = document.getElementById("words")
     let elOutput = document.getElementById("output")
     let elPalindrome = palindrome(elWords.value)
-    elOutput.innerHTML = elPalindrome
+    elOutput.innerHTML = "is the inserted word is known as palindrome? " + elPalindrome
 
 })
