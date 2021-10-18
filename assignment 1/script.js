@@ -5,7 +5,7 @@ elfactorialNumber.addEventListener("click",function(){
     let number = document.getElementById("factoralNumber")
     let elOutput = document.getElementById("output")
     let result = factorial(number.value)
-    elOutput.innerHTML = result
+    elOutput.innerHTML = " the factoral of the selected number is " + result
 })
   
 function factorial(n){

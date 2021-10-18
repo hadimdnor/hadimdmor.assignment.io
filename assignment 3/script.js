@@ -19,6 +19,6 @@ elForm.addEventListener("click", function(){
     let elWords = document.getElementById("words")
     let elOutput = document.getElementById("output")
     let elVowel = vowelCount(elWords.value)
-    elOutput.innerHTML = elVowel
+    elOutput.innerHTML = " the number of vowel is" + elVowel
 
 })
