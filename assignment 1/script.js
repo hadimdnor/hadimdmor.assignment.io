@@ -3,8 +3,9 @@
 let elfactorialNumber = document.getElementById("numberFactoral")
 elfactorialNumber.addEventListener("click",function(){
     let number = document.getElementById("factoralNumber")
-    let fNumber = factorial(number.value)
-    fNumber.innerHTML
+    let elOutput = document.getElementById("output")
+    let result = factorial(number.value)
+    elOutput.innerHTML = result
 })
   
 function factorial(n){

@@ -1,4 +1,4 @@
-function vowel_count(str1)
+function vowelCount(str1)
 {
   var vowel_list = 'hadimdnor';
   var vcount = 0;
@@ -13,4 +13,12 @@ function vowel_count(str1)
   }
   return vcount;
 }
-console.log(vowel_count("Mohd Nurhadi Bin Md Nor"));
+
+let elForm = document.getElementById("findVowel")
+elForm.addEventListener("click", function(){
+    let elWords = document.getElementById("words")
+    let elOutput = document.getElementById("output")
+    let elVowel = vowelCount(elWords.value)
+    elOutput.innerHTML = elVowel
+
+})
